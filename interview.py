@@ -2,7 +2,7 @@ from openai import OpenAI
 import time
 
 # Initialize OpenAI client
-client = OpenAI()
+client = OpenAI(api_key='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')
 
 # Start tracking conversation time
 conversation_start_time = time.time()
@@ -35,7 +35,7 @@ messages = [
 
 def get_response(messages):
     response = client.chat.completions.create(
-        model="gpt-4o-mini",
+        model="ft:gpt-4o-mini-2024-07-18:personal::BBkbmaIK",
         messages=messages,
         tools=tools,
         tool_choice="auto"
