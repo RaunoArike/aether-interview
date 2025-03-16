@@ -2,7 +2,7 @@ from openai import OpenAI
 import time
 
 # Initialize OpenAI client
-client = OpenAI(api_key="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")
+client = OpenAI()
 
 # Start tracking conversation time
 conversation_start_time = time.time()
